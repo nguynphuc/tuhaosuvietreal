@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/468844549_1113231380446541_4594805400783282872_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=j8H3oiF9vVUQ7kNvgGDXIIb&_nc_zt=23&_nc_ht=scontent.fsgn5-5.fna&_nc_gid=AFw3oZw9C0pf6udX8Jgklr1&oh=00_AYCx0LUkuQ9UhTkH4ytQVsiDwOGIvMgWwuCQKI2Xnw_3OQ&oe=6750D477');  
+    background-size: 1535px 694px;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+body{
+    display: flex;
+    justify-self: center;
+    align-items: center; 
+    min-height: 50vh;
+    margin: 0;
+}
+
+.container{
+    position: relative;
+    width: 256px;
+    height: 256px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    position: absolute;
+    width: 400px;
+}
+
+form{
+    width: 100%;
+    padding: 0 50px;
+
+}
+
+h2 {
+    font-size: 2em;
+    color: red;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    margin: 25px 0;
+}
+
+input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1em;
+    color: black;
+    padding: 0 20px;
+    transition: .5s ease;
+}
+
+input:focus {
+    border-color: rgb(48, 120, 253);
+}
+
+label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    pointer-events: none;
+    transition: .5s ease;
+}
+
+input:focus~label {
+    top: 1px;
+    font-size: .8em;
+    background: black;
+    padding: 0 6px;
+    color: #0ef;
+}
+
+.forgot-pass {
+    margin: -15px 0 10px;
+    text-align: center;
+}
+
+.forgot-pass a{
+    font-size: .85em;
+    color: blue;
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background:rgb(237, 30, 30); 
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: aliceblue;
+    font-weight: 600;
+
+}
+
+.signup-link {
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+.signup-link a {
+    font-size: 1em;
+    color: blue;
+    font-weight: 600;
+}
